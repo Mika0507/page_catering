@@ -1,0 +1,367 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 75em;
+    margin: 0 auto;
+}
+
+/* Aquí comienza el header */
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+}
+.logocatering{
+    margin: 2.5em;
+}
+.menu1{
+    display: flex;
+}
+.menu1_a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.listamenu1{
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    padding: 3.938em;
+    margin-top: 6.25em;
+}
+.enlacemenu1{
+    text-decoration: none;
+    color: black;
+}
+.migaspan{
+    display: flex;
+    margin-left: 2.5em;
+}
+.listbread{
+    list-style: none;
+    padding: 0.313em;
+}
+.enlaceindex{
+    text-decoration: none;
+    color: black;
+}
+
+/* Aquí termina el header */
+
+/* Menu hamburguesa */
+.menuburguer0{
+    width: 185px;
+    height: 203px;
+    margin: 0 auto;
+}
+/* .menu1_a{
+
+} */
+.menuburguer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuburguer2{
+    overflow: hidden;
+    list-style: none;
+    line-height: 250%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25em;
+}
+/* carrusel */
+.carrousel {
+    margin: 0 auto;
+}
+
+.imagenes img{
+    width: 100%;
+}
+
+.control {
+    position: relative;
+}
+
+a#retroceder, a#avanzar{
+    
+    position: absolute;
+    top: 19vw;/*Viewport Width - relativo al ancho del visor*/
+    /*Ancho y alto de la <a>*/
+    width: 4.4vw;/*Viewport Height - relativo al alto del visor*/
+    height: 7vw;
+    /* border: 2px solid black; */
+    /*Hace que toda la <a> sea clicable*/
+    display: block;
+
+}
+
+a#retroceder{
+    left: 10px;
+}
+a#avanzar{
+    right: 10px;
+}
+
+/* Aquí comienza el section menu empresa */
+
+.sectmenuempresa{
+    margin: 0 auto;
+    width: 61.375em;
+    height: 103em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    
+}
+.h1menuempresa{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    margin: 2.063em;
+}
+.artimenuempresa{
+    width: 29.688em;
+    height: 31.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.divmenuempresa{
+    margin: 1.438em 4.125em 0 0;
+
+}
+.h2menuempresa{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3em;
+}
+.imgmenuempresa{
+    width: 475px;
+    height: 195px;
+}
+.ulmenuempresa{
+    margin: 1.625em 1.875em;
+    
+}
+.limenuempresa{
+    line-height: 150%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+}
+.li_added{
+    list-style-type: symbols("*");
+}
+
+/* Aquí termina el section menu empresa */
+
+/* Aquí comienza el main de contacto*/
+
+.form{
+    margin: 0 auto;
+    width: 55%;
+}
+.h2form{
+    text-align: center;
+    margin: 2.063em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    justify-content: center;
+}
+.h3form{
+    text-align: center;
+    font-style: normal;
+    font-size: 2.25em;
+    font-weight: 300;
+    margin: 2.063em;
+}
+.ulform{
+    margin-top: 4.375em;
+}
+.listform{
+    list-style-type: none;
+    margin: 1.25em;
+}
+label{    
+    font-style: normal;
+    font-weight: 400;
+} 
+input{
+    width: 100%;
+    height: 1.875em;
+    border: none;
+    background-color: rgba(94, 94, 94, 0.1);
+    padding: 0.625em;
+    margin-top: 0.625em;
+}
+.check{
+    width: 1.25em;
+    margin-left: 25%;
+}
+.min-max{
+    font-weight: lighter;
+}
+.ocultar{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+.message{
+    height: 12.125em;
+}
+button{
+    width: 10.938em;
+    height: 2.25em;
+    background-color: #069697;
+    color: white;
+    margin-top: 1.25em;
+    margin-left: 35%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+/* Aquí termina el main de contacto*/
+
+/* Aquí comienza los articles del home */
+.valueshome{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h1home{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+}
+.bannershome{
+    display: flex;
+    margin: 3em 2.5em;
+}
+.procomhome, .procomhome1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28.75em;
+    height: 15.125em;
+}
+.procomhome{
+    margin: 2.5em 4.688em 0 0;
+}
+.imgprocohome, .imgprocohome1{
+    width:36.563em;
+    height:21.25em;
+}
+.procomhome1{
+    margin: 2.5em 0 0 4.688em;
+}
+.h2home{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+}
+.texthome{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125em;
+}
+.enlacehome{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0.625em 0.5em;
+    background-color: #069697;
+    width: 10.938em;
+    height: 2.25em;
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+/* Aquí termina los articles del home */
+
+/* Aquí comienza el article */
+.articlemenus{
+    margin: 3em;
+}
+.h2arti{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+    margin: 2.5em;
+}
+.aremenus{
+    display: flex;
+    margin: 0 auto;
+    width: 61.313em;
+}
+.imgarticle{
+    border-radius: 100%;  
+}
+.artimenus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artimenus2{
+    margin: 0 6.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partic{
+    margin: 1.375em;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.125em;
+}
+.a-artic{
+    text-decoration: none;
+    width: 6.375em;
+    height: 2.25em;
+    text-align: center;
+    padding: 0.625em 1em;
+    font-size: 0.875em;
+    background-color: #069697;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+/* Aquí termina el article */
+
+/* Aquí comienza el footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 16.625em;
+    width: 100%;
+}
+.textfooter{
+    margin: 2.875em 0px 2.875em 5.438em;
+    width: 60%;
+    display: flex;
+    padding-top: 1.563em ;
+}
+.iconsfooter{
+    margin: 2.875em 5.438em 2.875em 0px;   
+}
+.instafooter{
+    margin: 0 2.375em;
+}
+address{
+    margin: 0 3.188em;
+    font-style: normal;
+}
+.telf{
+    margin: 0 3.188em 0 0;
+}

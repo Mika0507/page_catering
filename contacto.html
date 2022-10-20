@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fartera Catering Home Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/422e663310.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+
+        <div class="cabecera">
+            <img class="logocatering" src="assets/Logos/Logo.svg" alt="logo Catering">
+            <nav>
+                <ul class="menu1">
+                    <li class="listamenu1"><a class="enlacemenu1" href="#">INICIO</a> </li>
+                    <li class="listamenu1"><a class="enlacemenu1" href="#">HISTORIA</a> </li>
+                    <li class="listamenu1"><a class="enlacemenu1" href="#">SERVICIOS</a> </li>
+                    <li class="listamenu1"><a class="enlacemenu1" href="#">CONTACTO</a> </li>
+                </ul>   
+            </nav>
+        </div>
+        <!-- Migas de pan -->
+        <ul class="migaspan">
+            <li class="listbread"><a class="enlaceindex" href="index.html">INICIO</a></li>
+            <li class="listbread"><i class="fa-solid fa-chevron-right"></i></li>
+            <li class="listbread">CONTACTO</li>
+        </ul>
+
+    </header>
+    <main>
+
+        <form class="form" id="form" method="post" action="envio.php"> 
+
+            <h2 class="h2form">Contacto</h2>
+            <h3 class="h3form">Solicita presupuesto</h3> 
+
+            <ul class="ulform">
+
+                <li class="listform">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre"id="nombre" maxlength="20">
+                    <span id="nom-error" class="ocultar">El campo del Nombre no puede estar vacío</span>
+                </li>
+                <li class="listform">
+                    <label>Empresa</label>
+                    <input type="text" name="empresa"id="empresa" maxlength="40">
+                </li>
+                <li class="listform">
+                    <label>Web</label>
+                    <input type="text " name="web" id="web">
+                    <!-- cambiar a tipo text -->
+                </li>
+                <li class="listform">
+                    <label>Número de asistentes aproximados <span class="min-max">(mínimo 20- máximo 200)</span> </label>
+                    <input type="text" name="numeroasistentes" id="numero"placeholder="20">
+                    <span id="num-error" class="ocultar">El número de asistentes no puede ser menor de 20</span>
+                    <span id="num-error1" class="ocultar">El número de asistentes no puede ser mayor de 200</span>
+                </li>
+                <li class="listform">
+                    <label>E-mail de contacto</label>
+                    <!-- se cambia a tipo text -->
+                    <input type="text" name="email" id="email">
+                    <span id="email-error" class="ocultar">El campo del Email no puede estar vacío</span>
+                    <span id="email-format-error" class="ocultar">El campo del Email no está escrito correctamente</span>
+                </li>
+                <li class="listform">
+                    <label>Mensaje</label>
+                    <input class="message" type="text" name="mensaje" id="mensaje" maxlength="100">
+                </li>
+                <li class="listform">
+                    <input class="check" type="checkbox" name="check" id="check">
+                    <label for="check">He leído y acepto la política deprivacidad</label>
+                    <span id="non-check" class="ocultar">Marque esta casilla si desea continuar</span> 
+                </li>
+                <li class="listform">
+                    <button type="submit">CONTACTAR</button>
+                </li>
+
+            </ul>
+
+        </form>
+
+        <article class="articlemenus">
+
+            <h2 class="h2arti">Descubre nuestros menús</h2>
+
+            <div class="aremenus">
+               <div class="artimenus">
+
+                    <picture>
+                      <img class="imgarticle" src="assets/img/empresa1.jpg" alt="empresas">  
+                    </picture>
+                    
+                    <p class="partic">Empresas</p>
+                    <a class="a-artic" href="">Ver menú</a>
+
+                </div>
+                <div class="artimenus2">
+
+                    <picture>
+                        <img class="imgarticle" src="assets/img/celebraciones1.jpg" alt="celebraciones">
+                    </picture>
+                    
+                    <p class="partic">Celebraciones</p>
+                    <a class="a-artic" href="">Ver menú</a>
+
+                </div>
+                <div class="artimenus">
+
+                    <picture>
+                      <img class="imgarticle" src="assets/img/escuela1.jpg" alt="escuela">  
+                    </picture>
+                    
+                    <p class="partic">Escuelas</p>
+                    <a class="a-artic" href="">Ver menú</a>
+
+                </div> 
+            </div>
+
+        </article>
+
+        <footer>
+
+            <div class="textfooter">
+                <p>&#169 2020. Fartera Catering.</p>   
+                <address> C/ Llacuna 162, 08018 Barcelona.</address>    
+                <p class="telf">Telf.: 93 542 65 65</p> 
+            </div> 
+            <div class="iconsfooter">
+                <img src="assets/Logos/twitter.svg" alt="twitter">
+                <img class="instafooter" src="assets/Logos/instagram.svg" alt="instagram">
+                <img src="assets/Logos/facebook.svg" alt="facebook">
+            </div>
+
+        </footer>
+    </main>
+    <script src="js/form.js"></script>
+</body>
+</html>
